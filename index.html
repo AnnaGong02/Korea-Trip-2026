@@ -1,14 +1,194 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b5bd3" />
-    <meta name="description" content="面向企业用户的劳动用工合规咨询助手" />
-    <title>企业合规助手</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ed">
+  <meta name="description" content="2026年国庆韩国7天6晚旅行攻略：釜山与首尔行程、交通、购物和美食清单。">
+  <title>2026 KOREA TRIP｜国庆韩国旅行攻略</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="hero" id="top">
+    <nav class="topbar" aria-label="页面导航">
+      <a class="brand" href="#top" aria-label="返回首页">KOR. 2026</a>
+      <a class="mini-link" href="#itinerary">每日打卡 ↘</a>
+    </nav>
+
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span>SEOUL</span><span>35.17° N</span><span>BUSAN</span></p>
+      <div class="title-wrap">
+        <span class="stamp">AUTUMN<br>ISSUE</span>
+        <h1>2026<br><em>KOREA</em> TRIP</h1>
+      </div>
+      <p class="route">上海 <i>✦</i> 釜山 <i>✦</i> 首尔</p>
+      <p class="trip-date">2026.10.01 — 2026.10.07</p>
+
+      <div class="countdown-card" aria-live="polite">
+        <span class="countdown-label">距离出发还有</span>
+        <div class="countdown" id="countdown">
+          <span><strong id="days">--</strong>天</span>
+          <span><strong id="hours">--</strong>时</span>
+          <span><strong id="minutes">--</strong>分</span>
+          <span><strong id="seconds">--</strong>秒</span>
+        </div>
+      </div>
+
+      <div class="tag-row" aria-label="旅行概览">
+        <span class="sticker blue">7天6晚</span>
+        <span class="sticker pink">釜山2晚</span>
+        <span class="sticker cream">首尔4晚</span>
+      </div>
+      <a class="primary-button" href="#itinerary">查看行程 <span>↓</span></a>
+    </div>
+    <div class="hero-doodle" aria-hidden="true">
+      <span class="postcard">KR<br><small>OCT 2026</small></span>
+      <span class="flight-line">✈︎ · · · · · ·</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="section transport-section" id="transport">
+      <div class="section-heading reveal">
+        <p class="section-no">01 / MOVING</p>
+        <h2>交通备忘</h2>
+        <p>从浦东起飞，沿着海岸抵达釜山，再搭一班列车去首尔。</p>
+      </div>
+      <div class="transport-grid">
+        <article class="transport-card reveal">
+          <div class="transport-top"><span>OCT. 01</span><span class="mode">✈ FLIGHT</span></div>
+          <p class="transport-route"><strong>PVG</strong><span class="route-line"></span><strong>PUS</strong></p>
+          <p class="city-route">上海浦东 → 釜山</p>
+          <div class="transport-meta"><span>东方航空</span><strong>09:00—11:35</strong></div>
+          <p class="note">航班号暂未确定</p>
+        </article>
+        <article class="transport-card featured reveal">
+          <div class="transport-top"><span>OCT. 03</span><span class="mode">🚄 KTX</span></div>
+          <p class="transport-route"><strong>PUS</strong><span class="route-line"></span><strong>SEL</strong></p>
+          <p class="city-route">釜山 → 首尔</p>
+          <div class="transport-meta"><span>KTX</span><strong>12:34—14:59</strong></div>
+          <p class="note">早餐后收拾行李、退房并前往釜山站</p>
+        </article>
+        <article class="transport-card reveal">
+          <div class="transport-top"><span>OCT. 07</span><span class="mode">✈ FLIGHT</span></div>
+          <p class="transport-route"><strong>ICN</strong><span class="route-line"></span><strong>PVG</strong></p>
+          <p class="city-route">首尔仁川 → 上海浦东</p>
+          <div class="transport-meta"><span>东方航空</span><strong>14:30—15:45</strong></div>
+          <p class="note">航班号暂未确定</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section apps-section" id="apps">
+      <div class="section-heading reveal">
+        <p class="section-no">02 / TRAVEL KIT</p>
+        <h2>出发前装好</h2>
+        <p>四个免费工具足够覆盖找路、打车、翻译和KTX，建议在国内提前下载并完成注册。</p>
+      </div>
+      <div class="app-grid">
+        <a class="app-card essential reveal" href="https://map.naver.com/" target="_blank" rel="noopener noreferrer">
+          <span class="app-rank">MUST HAVE</span><span class="app-icon map-icon">N</span>
+          <h3>NAVER Map</h3><strong>地图 · 公交 · 地铁</strong>
+          <p>韩国日常导航首选。支持中文，可查步行路线、地铁出口和公交换乘。</p>
+          <small>建议把酒店韩文地址提前收藏 ↗</small>
+        </a>
+        <a class="app-card reveal" href="https://kride.kakaomobility.com/" target="_blank" rel="noopener noreferrer">
+          <span class="app-rank">TAXI</span><span class="app-icon taxi-icon">K</span>
+          <h3>k.ride</h3><strong>外国游客打车</strong>
+          <p>Kakao Mobility 的国际版打车工具，支持中文搜索、聊天翻译和预估车费。</p>
+          <small>长距离或行李较多时使用 ↗</small>
+        </a>
+        <a class="app-card reveal" href="https://papago.naver.com/" target="_blank" rel="noopener noreferrer">
+          <span class="app-rank">TRANSLATE</span><span class="app-icon papago-icon">P</span>
+          <h3>Papago</h3><strong>文字 · 对话 · 图片翻译</strong>
+          <p>适合翻译韩文菜单、商品包装和店员对话，支持简体中文与繁体中文。</p>
+          <small>提前下载韩语离线包更安心 ↗</small>
+        </a>
+        <a class="app-card reveal" href="https://www.letskorail.com/" target="_blank" rel="noopener noreferrer">
+          <span class="app-rank">TRAIN</span><span class="app-icon rail-icon">KTX</span>
+          <h3>KorailTalk</h3><strong>KTX车票 · 时刻</strong>
+          <p>用于查询釜山至首尔的KTX班次和车票。购票后保留电子票截图。</p>
+          <small>10月3日列车信息以出票为准 ↗</small>
+        </a>
+      </div>
+      <p class="app-tip reveal"><span>TIP</span> 店名搜不到时，复制韩文名称到 NAVER Map；叫车前再次核对上车点和车牌。</p>
+    </section>
+
+    <section class="section stay-section" id="stays">
+      <div class="section-heading reveal">
+        <p class="section-no">03 / STAY</p>
+        <h2>这次住这里</h2>
+        <p>两间酒店都已经成为每日路线的出发点与回程落点。</p>
+      </div>
+      <div class="stay-grid">
+        <article class="stay-card busan-stay reveal">
+          <span class="stay-city">BUSAN · 2 NIGHTS</span>
+          <div class="stay-icon" aria-hidden="true">🌊</div>
+          <h3>釜山朝昕经典酒店</h3>
+          <p>Grand Josun Busan</p>
+          <address>292 Haeundaehaebyeon-ro<br>海云台区，釜山</address>
+          <span class="station-tag">🚇 地铁2号线 · 海云台站</span>
+        </article>
+        <article class="stay-card seoul-stay reveal">
+          <span class="stay-city">SEOUL · 4 NIGHTS</span>
+          <div class="stay-icon" aria-hidden="true">🏙️</div>
+          <h3>首尔明洞 voco</h3>
+          <p>voco Seoul Myeongdong</p>
+          <address>52 Toegye-ro<br>中区，首尔</address>
+          <span class="station-tag">🚇 地铁4号线 · 会贤站</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section itinerary-section" id="itinerary">
+      <div class="section-heading reveal">
+        <p class="section-no">04 / DAILY NOTES</p>
+        <h2>七日行程</h2>
+        <p>点选地点状态，把期待一点点变成旅途里的真实记忆。</p>
+      </div>
+
+      <div class="city-visual-grid">
+        <figure class="city-visual busan-visual reveal">
+          <img src="assets/busan-coast.png" alt="釜山白浅滩风格的海岸与蓝色大海" loading="lazy">
+          <figcaption><span>01—03 OCT.</span><strong>BUSAN</strong><small>海风 · 海岸列车 · 慢慢走</small></figcaption>
+        </figure>
+        <figure class="city-visual seoul-visual reveal">
+          <img src="assets/seoul-hanok.png" alt="秋日首尔北村韩屋街景" loading="lazy">
+          <figcaption><span>03—07 OCT.</span><strong>SEOUL</strong><small>韩屋 · 街区 · 城市散步</small></figcaption>
+        </figure>
+      </div>
+
+      <div class="progress-panel reveal">
+        <div class="progress-copy">
+          <span>TRIP PROGRESS</span>
+          <strong id="progressText">0 / 0 已打卡</strong>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="总行程完成进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span id="progressBar"></span>
+        </div>
+      </div>
+
+      <nav class="date-nav" id="dateNav" aria-label="日期快速导航"></nav>
+      <div class="filter-row" id="filters" aria-label="行程筛选">
+        <button class="filter active" type="button" data-filter="全部">全部</button>
+        <button class="filter" type="button" data-filter="釜山">釜山</button>
+        <button class="filter" type="button" data-filter="首尔">首尔</button>
+        <button class="filter" type="button" data-filter="美食">美食</button>
+        <button class="filter" type="button" data-filter="购物">购物</button>
+      </div>
+      <div class="itinerary-list" id="itineraryList"></div>
+      <p class="empty-state" id="emptyState" hidden>这个分类里暂时没有安排 ฅ՞•ﻌ•՞ฅ</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>우리의 가을 여행 · OUR AUTUMN IN KOREA</p>
+    <small>上海 — 釜山 — 首尔 · 2026</small>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部">↑</button>
+  <script src="script.js"></script>
+</body>
 </html>

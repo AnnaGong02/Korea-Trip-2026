@@ -31,9 +31,9 @@ const itinerary = [
 ];
 
 const oliveYoungItems = [
-  "鱼腥草面膜", "Careplus 痘痘贴", "Fwee 水光唇釉", "Kahi 万用棒", "冰块唇釉", "Fixx 唇部打底",
-  "Mediheal 积雪草泥膜", "南瓜茶", "Hince 水光棒", "Lilybred 睫毛膏", "Scalp Shot 缩发缝小绿梳",
-  "生发液滚珠", "爱茉莉 VB 绿茶果冻", "RETURNITY 点位贴", "Fillimilli 冰敷消肿神器", "Beplain V脸面膜", "VID 鼻贴"
+  "Careplus 痘痘贴", "Fixx 唇部打底", "Mediheal 积雪草泥膜", "南瓜茶", "Hince 水光棒",
+  "Lilybred 睫毛膏", "Scalp Shot 缩发缝小绿梳", "爱茉莉 VB 绿茶果冻", "RETURNITY 点位贴",
+  "Fillimilli 冰敷消肿神器", "Beplain V脸面膜", "VID 鼻贴"
 ];
 const brandChecklists = {
   "Olive Young 明洞店": { id: "olive", kicker: "OLIVE YOUNG MYEONGDONG", title: "🫒 明洞店采购清单", items: oliveYoungItems },
@@ -152,7 +152,7 @@ function renderCheckinGroup(title, icon, className, entries, dayIndex) {
         const oliveChecklist = brandList ? `<div class="olive-checklist">
           <div class="olive-list-heading"><span>${brandList.kicker}</span><strong>${brandList.title}</strong></div>
           <div class="olive-list-grid">${brandList.items.map((item, index) => {
-            const checkId = `${brandList.id}-${index}`;
+            const checkId = `${brandList.id === "olive" ? "olive-v2" : brandList.id}-${index}`;
             return `<label class="special-check"><input type="checkbox" data-check-id="${checkId}" ${checks[checkId] ? "checked" : ""}><span aria-hidden="true"></span><em>${item}</em></label>`;
           }).join("")}</div>
         </div>` : "";
